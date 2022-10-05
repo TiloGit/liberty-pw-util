@@ -16,10 +16,10 @@ How to use:
 * enter your pw you like to Encoded or the Encoded string (with the {aes} prefix) to get it Decode
 
 How to install WLP/liberty
-*  https://openliberty.io/start/
-*  setx JAVA_HOME "C:\myJave\jdk" 
-*  run in BIN dir:  server.bat create 
-*  mkdir -p C:\wlp\usr\servers\defaultServer\configDropins\defaults
-*  ##drop the xml and war
-*  featureUtility.bat installServerFeatures defaultServer
-*  server.bat start
+*  https://openliberty.io/start/ (download kernel zip)
+*  run `setx JAVA_HOME "C:\myJave\jdk"`  (if java not in PATH)
+*  run in BIN dir:  `server.bat create`
+*  run `mkdir -p ..\usr\servers\defaultServer\configDropins\defaults`  (to get C:\wlp\usr\servers\defaultServer\configDropins\defaults)
+*  ##drop the xml (to \defaultServer\configDropins\defaults) and war (to \defaultServer\dropins)
+*  run `featureUtility.bat installServerFeatures defaultServer`
+*  run `server.bat start`
